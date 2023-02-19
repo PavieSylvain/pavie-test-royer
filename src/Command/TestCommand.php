@@ -41,9 +41,9 @@ class TestCommand extends Command
         $section2 = $output->section();
         $section3 = $output->section();
         $section1->writeln('/************************** Test commande Royer **********************************/');
-        $section1->writeln('1: Jeu de test 1');
-        $section1->writeln('2: Jeu de test 2');
-        $section1->writeln('3: Jeu de test 3');
+        $section1->writeln('1: Jeu de test 1 ( plusieurs articles seules ');
+        $section1->writeln('2: Jeu de test 2 ( articles correspondant à un pack )');
+        $section1->writeln('3: Jeu de test 3 ( plusieurs articles et plusieurs pack )');
         $section1->writeln('4: exit');
         $question = new Question("Entrer une valeur entre 1 et 3 pour choisir un jeu de test, 4 pour quitter \n");
         $helper = $this->getHelper('question');
